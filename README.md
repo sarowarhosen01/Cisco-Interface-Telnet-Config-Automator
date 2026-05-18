@@ -24,6 +24,27 @@ Built with `asyncio` and `telnetlib3` for non-blocking I/O.
 - Proper connection cleanup
 - Basic error handling
 
+## Basic Configaration
+
+```
+enable
+configure terminal
+
+enable secret cisco123
+
+username admin password cisco123
+
+line vty 0 4
+login local
+transport input telnet
+exit
+end
+
+write memory
+
+```
+
+
 ## 🛠️ Requirements
 
 - Python 3.8 or higher
